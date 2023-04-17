@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: 
+    url("./fonts/gilroy/gilroy-regular.woff") format('woff'),
+    url("./fonts/gilroy/gilroy-regular.woff2") format('woff2'),
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  src: 
+    url("./fonts/gilroy/gilroy-extrabold.woff") format('woff'),
+    url("./fonts/gilroy/gilroy-extrabold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: light;
+  src: 
+    url("./fonts/gilroy/gilroy-light.woff") format('woff'),
+    url("./fonts/gilroy/gilroy-light.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: 
+    url("./fonts/dinpro/din_pro.woff") format('woff'),
+    url("./fonts/dinpro/din_pro.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: bold;
+  src: 
+    url("./fonts/dinpro/din_pro_bold.woff") format('woff'),
+    url("./fonts/dinpro/din_pro_bold.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Circe';
+  font-style: normal;
+  font-weight: normal;
+  src: 
+    url("./fonts/circe/circe.woff") format('woff'),
+    url("./fonts/circe/circe.woff2") format('woff2');
+}
+
+body {
+  font-family: "DIN Pro", sans-serif;
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  height: 768px;
+}
+
+p {
+  display: flex;
+  align-items: center;
+}
+
+.inner-container {
+  margin-top: 27px;
+  margin-left: 67px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.header {
+  width: 156px;
+  height: 29px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-btn {
+  height: 20px;
+  width: 22px;
+  margin-right: 24px;
+  border: none; 
+  background: none;
+}
+
+.home-line {
+  height: 31px;
+  width: 7px;
+  font-size: 30px;
+}
+
+.header-title {
+  margin-left: 18px;
+  width: 85px;
+  height: 20px;
+}
+
+.header-text{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Circe';
+  font-size: 18px;
+  letter-spacing: 2.5px;
+}
+
+.content {
+  margin-top: 67px;
+  width: 922px;
+  height: 584px;
+}
+
+.logo {
+  width: 60px;
+  height: 14px;
+  margin-top: 43px;
+}
+
+.main-container {
+  width: 922px;
+  height: 400px;
+  
+}
+
+.main-greeting {
+  width: 125px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.main-text-greeting {
+  font-size: 25px;
+  letter-spacing: 2px;
+  
+}
+
+.main-text-container {
+  width: 922px;
+  height: 350px;
+}
+
+.size-80 {
+  font-size: 110px;
+}
+
+.main-text-normal {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 15px 0px;
+}
+
+.main-text-bold {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.main-inner {
+  width: 850px;
+  height: 98px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-btn {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  height: 83px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff6a9f;
+}
+
+.main-btn-text {
+  font-family: 'DIN Pro';
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.main-btn-logo {
+  width: 58px;
+  margin: 0px 15px;
+}
