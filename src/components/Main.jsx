@@ -8,7 +8,7 @@ const Main = () => {
       </div>
       <div className='main-text-container'>
         <p className='main-text-normal size-80'>
-          ЭТО <span className='main-text-bold size-80'> НЕ</span>
+          ЭТО <span className='main-text-bold size-80'>НЕ</span>
         </p>
         <p className='main-text-normal size-80'>КОММЕРЧЕСКОЕ</p>
         <div className='main-inner'>
