@@ -1,12 +1,14 @@
 import homebtn from '../images/buttons/homebtn.png';
 import logo from '../images/logo.png';
 import bg1 from '../images/backgrounds/bg1.png';
-import Main from './Main';
+import TextSlide from './TextSlide';
 
-const currentSlide = <Main />;
+const currentSlide = <TextSlide />;
 const background = bg1;
 
-const Home = () => {
+const Root = () => {
+  const handleClick = () => alert('Нашажата кнопка домой');
+
   return (
     <div
       className='container'
@@ -14,7 +16,7 @@ const Home = () => {
     >
       <div className='inner-container'>
         <div className='header'>
-          <button className='home-btn'>
+          <button className='home-btn' onClick={handleClick}>
             <img className='home-btn' src={homebtn} />
           </button>
           <p className='home-line'>|</p>
@@ -31,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Root;

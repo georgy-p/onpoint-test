@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div className='main-container'>
       <div className='main-greeting'>
-        <p className='main-text-greeting'>ПРИВЕТ,</p>
+        <p className='corner-text'>ПРИВЕТ,</p>
       </div>
       <div className='main-text-container'>
         <p className='main-text-normal size-80'>
