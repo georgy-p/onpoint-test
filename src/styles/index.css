@@ -55,18 +55,20 @@
 body {
   font-family: "DIN Pro", sans-serif;
   margin: 0px;
+  width: 1024px;
+  height: 768px;
 }
 
 div {
   display: flex;
   flex-direction: column;
-  width: 1024px;
-  height: 768px;
 }
 
 p {
-  display: flex;
-  align-items: center;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .inner-container {
@@ -90,6 +92,7 @@ p {
   margin-right: 24px;
   border: none; 
   background: none;
+  cursor: pointer;
 }
 
 .home-line {
@@ -136,10 +139,9 @@ p {
   margin-bottom: 30px;
 }
 
-.main-text-greeting {
+.corner-text {
   font-size: 25px;
   letter-spacing: 2px;
-  
 }
 
 .main-text-container {
@@ -191,4 +193,71 @@ p {
 .main-btn-logo {
   width: 58px;
   margin: 0px 15px;
+}
+
+.text-slide-container {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.text-scroll-box {
+  margin-top: 45px;
+  width: 830px;
+  height: 450px;
+  flex-direction: row;
+  overflow: auto;
+  direction: rtl;
+}
+
+.text-scroll-box::-webkit-scrollbar {
+  width: 20px;
+  scroll-behavior: smooth;
+}
+
+.text-scroll-box::-webkit-scrollbar-track {
+  background: black;
+  border: 8px solid transparent;
+  background-clip: content-box;
+}
+
+
+.text-scroll-box::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  width: 10px;
+  border: 20px solid #ff6a9f; 
+  background-clip: content-box;
+}
+
+.text-sroll-panel {
+  border: solid;
+  border: black;
+  width: 34px;
+  height: 440px;
+  overflow: auto;
+  margin-right: 17px;
+}
+
+.text-scroll-container {
+  width: 777px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+
+.text-scroll-inner-container {
+  margin: 30px 32px 0px;
+}
+
+.text-scroll-text {
+  font-family: 'DIN Pro';
+  font-weight: normal;
+  font-size: 22px;
+  direction: ltr;
+}
+
+.text-scroll-text-bold {
+  font-family: 'DIN Pro';
+  font-weight: bold;
 }
