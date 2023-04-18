@@ -1,9 +1,9 @@
 import homebtn from '../images/buttons/homebtn.png';
 import logo from '../images/logo.png';
 import bg1 from '../images/backgrounds/bg1.png';
-import TextSlide from './TextSlide';
+import ProductSlide from './ProductSlide';
 
-const currentSlide = <TextSlide />;
+const currentSlide = <ProductSlide />;
 const background = bg1;
 
 const Root = () => {
