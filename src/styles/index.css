@@ -64,11 +64,12 @@ div {
   flex-direction: column;
 }
 
-p {
+h1, p {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  margin-top: 0px;
 }
 
 .inner-container {
@@ -125,6 +126,7 @@ p {
   width: 60px;
   height: 14px;
   margin-top: 43px;
+  z-index: 1;
 }
 
 .main-container {
@@ -260,4 +262,119 @@ p {
 .text-scroll-text-bold {
   font-family: 'DIN Pro';
   font-weight: bold;
+}
+
+.product-bottle {
+  display: flex;
+  width: 230px;
+  height: 672px;
+  z-index: 1;
+  position: absolute;
+  top: 91px;
+  left: 55px
+}
+
+.product-main-container {
+  width: 825px;
+  height: 585px;
+  margin-left: 75px;
+}
+
+.advantages-container {
+  margin-top: 10px;
+  width: 820px;
+  height: 585px;
+  background: #fff;
+  border-radius: 40px;
+}
+
+.advantages-inner-container {
+  margin: 45px 30px 45px 210px ;
+  flex-direction: row;
+}
+
+.advantages-header {
+  font-family: 'DIN Pro';
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.col-1{
+  width: 535px;
+}
+
+.advantages-subheader {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 90px;
+  letter-spacing: 10px;
+  margin-top: 0px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.advantages-subheader span {
+  font-family: 'Gilroy';
+  font-weight: bold;
+}
+
+.col-2 {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.list-container {
+  width: 490px;
+  height: 295px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.list-btn-group {
+  margin-top: 35px;
+  width: 93px;
+  height: 25px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.list-circle {
+  width: 8px;
+  height: 8px;
+  border: solid black;
+  border-radius: 100px;
+}
+
+.active {
+  background: #ff6a9f;
+  border: solid #ff6a9f;
+}
+
+.list-item-group {
+  flex-direction: column;
+  width: 480px;
+  height: 95px;
+  margin-top: 10px;
+}
+
+.list-item-number {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  color: #8cc9e8;
+  font-size: 22px;
+}
+
+.list-item-text {
+  margin-top: 10px;
+  font-family: 'DIN Pro';
+  font-weight: normal;
+  font-size: 23px;
 }
