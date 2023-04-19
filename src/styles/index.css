@@ -177,22 +177,25 @@ h1, p {
 }
 
 .main-btn {
-  display: flex;
-  align-items: center;
   width: 290px;
+}
+
+.btn {
+  display: flex;
   height: 83px;
+  align-items: center;
   border: none;
   border-radius: 50px;
   background-color: #ff6a9f;
 }
 
-.main-btn-text {
+.btn-text {
   font-family: 'DIN Pro';
   font-weight: normal;
   font-size: 26px;
 }
 
-.main-btn-logo {
+.btn-logo {
   width: 58px;
   margin: 0px 15px;
 }
@@ -293,7 +296,7 @@ h1, p {
   flex-direction: row;
 }
 
-.advantages-header {
+.product-header {
   font-family: 'DIN Pro';
   font-size: 30px;
   letter-spacing: 4px;
@@ -303,7 +306,7 @@ h1, p {
   width: 535px;
 }
 
-.advantages-subheader {
+.product-subheader {
   font-family: 'Gilroy';
   font-weight: normal;
   font-size: 90px;
@@ -313,7 +316,7 @@ h1, p {
   margin-left: 0;
 }
 
-.advantages-subheader span {
+.product-subheader span {
   font-family: 'Gilroy';
   font-weight: bold;
 }
@@ -377,4 +380,111 @@ h1, p {
   font-family: 'DIN Pro';
   font-weight: normal;
   font-size: 23px;
+}
+
+.product-container {
+  margin-top: 10px;
+  width: 820px;
+  height: 585px;
+  border-radius: 40px;
+}
+
+.product-innner-container {
+  margin-top: 45px;
+  flex-direction: column;
+}
+
+.product-row-1 {
+  margin-left: 210px;
+  width: 485px;
+  height: 130px;
+}
+
+.product-row-2 {
+  margin-left: 90px;
+  width: 730px;
+  height: 305px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product-col-1 {
+  flex-direction: column;
+  width: 400px;
+  height: 270px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.product-card-container-1 {
+  width: 420px;
+  height: 315px;
+}
+
+.product-card-1 {
+  background: white;
+  border-radius: 40px;
+  width: 415px;
+  height: 260px;
+  z-index: 0;
+  position: absolute;
+  top: 10px;
+}
+
+.product-card-inner {
+  margin-left: 150px;
+  width: 60%;
+  font-size: 23px;
+  position: relative;
+  z-index: 1;
+  bottom: 25px;
+}
+
+.icon {
+  width: 65px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.product-col-2 {
+  flex-direction: column;
+  width: 270px;
+  height: 270px;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+.product-card-2 {
+  background: white;
+  border-radius: 40px;
+  width: 270px;
+  height: 150px;
+  z-index: 0;
+  position: absolute;
+  top: 10px;
+}
+
+.product-card-container-2 {
+  width: 270px;
+  height: 200px;
+}
+
+.product-card-inner-2 {
+  margin-left: 50px;
+  width: 50%;
+  font-size: 23px;
+  position: relative;
+  z-index: 1;
+  bottom: 25px;
+}
+
+.close-btn {
+  border: none;
+  color: black;
+  width: 70px;
+  background:  none;
+  cursor: pointer;
+  margin-top: -12px;
 }
