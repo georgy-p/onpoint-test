@@ -1,9 +1,10 @@
 import prev from '../images/product_page/prev.png';
 import next from '../images/product_page/next.png';
+import close from '../images/product_page/close.svg';
 import advantagesList from '../texts/advantagesList';
 import { useState } from 'react';
 
-const Advantages = () => {
+const Advantages = ({ modalClick }) => {
   const { list1, list2 } = advantagesList;
   const [isNext, setNext] = useState(false);
 
@@ -25,8 +26,8 @@ const Advantages = () => {
     <div className='advantages-container'>
       <div className='advantages-inner-container'>
         <div className='col-1'>
-          <p className='advantages-header'>ПРЕИМУЩЕСТВА</p>
-          <h1 className='advantages-subheader'>
+          <p className='product-header'>ПРЕИМУЩЕСТВА</p>
+          <h1 className='product-subheader'>
             BREND<span>XY</span>
           </h1>
           <div className='list-container'>
@@ -47,7 +48,11 @@ const Advantages = () => {
             </div>
           </div>
         </div>
-        <div className='col-2'>x</div>
+        <div className='col-2'>
+          <button className='close-btn' onClick={modalClick}>
+            <img src={close} alt='close button' />
+          </button>
+        </div>
       </div>
     </div>
   );
