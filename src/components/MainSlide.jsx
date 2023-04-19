@@ -13,10 +13,12 @@ const Main = () => {
         <p className='main-text-normal size-80'>КОММЕРЧЕСКОЕ</p>
         <div className='main-inner'>
           <p className='main-text-normal size-80'>ЗАДАНИЕ</p>
-          <button className='main-btn'>
-            <img className='main-btn-logo' src={nextbtn} />
-            <p className='main-btn-text'>Что дальше?</p>
-          </button>
+          <div className='main-btn'>
+            <button className='btn'>
+              <img className='btn-logo' src={nextbtn} />
+              <p className='btn-text'>Что дальше?</p>
+            </button>
+          </div>
         </div>
       </div>
     </div>
