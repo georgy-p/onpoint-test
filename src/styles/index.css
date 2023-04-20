@@ -1,59 +1,53 @@
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: normal;
-  src: 
-    url("./fonts/gilroy/gilroy-regular.woff") format('woff'),
-    url("./fonts/gilroy/gilroy-regular.woff2") format('woff2'),
+  src: url('./fonts/gilroy/gilroy-regular.woff') format('woff'),
+    url('./fonts/gilroy/gilroy-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: bold;
-  src: 
-    url("./fonts/gilroy/gilroy-extrabold.woff") format('woff'),
-    url("./fonts/gilroy/gilroy-extrabold.woff2") format('woff2');
+  src: url('./fonts/gilroy/gilroy-extrabold.woff') format('woff'),
+    url('./fonts/gilroy/gilroy-extrabold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: light;
-  src: 
-    url("./fonts/gilroy/gilroy-light.woff") format('woff'),
-    url("./fonts/gilroy/gilroy-light.woff2") format('woff2');
+  src: url('./fonts/gilroy/gilroy-light.woff') format('woff'),
+    url('./fonts/gilroy/gilroy-light.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'DIN Pro';
+  font-family: 'DIN Pro';
   font-style: normal;
   font-weight: normal;
-  src: 
-    url("./fonts/dinpro/din_pro.woff") format('woff'),
-    url("./fonts/dinpro/din_pro.woff2") format('woff2');
+  src: url('./fonts/dinpro/din_pro.woff') format('woff'),
+    url('./fonts/dinpro/din_pro.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'DIN Pro';
+  font-family: 'DIN Pro';
   font-style: normal;
   font-weight: bold;
-  src: 
-    url("./fonts/dinpro/din_pro_bold.woff") format('woff'),
-    url("./fonts/dinpro/din_pro_bold.woff2") format('woff2');
+  src: url('./fonts/dinpro/din_pro_bold.woff') format('woff'),
+    url('./fonts/dinpro/din_pro_bold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Circe';
+  font-family: 'Circe';
   font-style: normal;
   font-weight: normal;
-  src: 
-    url("./fonts/circe/circe.woff") format('woff'),
-    url("./fonts/circe/circe.woff2") format('woff2');
+  src: url('./fonts/circe/circe.woff') format('woff'),
+    url('./fonts/circe/circe.woff2') format('woff2');
 }
 
 body {
-  font-family: "DIN Pro", sans-serif;
+  font-family: 'DIN Pro', sans-serif;
   margin: 0px;
   width: 1024px;
   height: 768px;
@@ -64,7 +58,8 @@ div {
   flex-direction: column;
 }
 
-h1, p {
+h1,
+p {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -96,7 +91,7 @@ h1, p {
   height: 20px;
   width: 22px;
   margin-right: 24px;
-  border: none; 
+  border: none;
   background: none;
   cursor: pointer;
 }
@@ -113,7 +108,7 @@ h1, p {
   height: 20px;
 }
 
-.header-text{
+.header-text {
   margin: 0px;
   padding: 0px;
   font-family: 'Circe';
@@ -137,7 +132,6 @@ h1, p {
 .main-container {
   width: 922px;
   height: 400px;
-  
 }
 
 .main-greeting {
@@ -230,11 +224,10 @@ h1, p {
   background-clip: content-box;
 }
 
-
 .text-scroll-box::-webkit-scrollbar-thumb {
   border-radius: 20px;
   width: 10px;
-  border: 20px solid #ff6a9f; 
+  border: 20px solid #ff6a9f;
   background-clip: content-box;
 }
 
@@ -254,7 +247,6 @@ h1, p {
   border-radius: 50px;
   margin-left: 20px;
 }
-
 
 .text-scroll-inner-container {
   margin: 30px 32px 0px;
@@ -299,7 +291,7 @@ h1, p {
 }
 
 .advantages-inner-container {
-  margin: 45px 30px 45px 210px ;
+  margin: 45px 30px 45px 210px;
   flex-direction: row;
 }
 
@@ -309,7 +301,7 @@ h1, p {
   letter-spacing: 4px;
 }
 
-.col-1{
+.col-1 {
   width: 535px;
 }
 
@@ -431,7 +423,7 @@ h1, p {
 
 .product-card-1 {
   background: white;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
   width: 415px;
   height: 260px;
@@ -464,13 +456,13 @@ h1, p {
   margin-left: 60px;
 }
 
-.dark  {
+.dark {
   filter: brightness(80%);
 }
 
 .product-card-2 {
   background: white;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
   width: 270px;
   height: 150px;
@@ -497,7 +489,7 @@ h1, p {
   border: none;
   color: black;
   width: 70px;
-  background:  none;
+  background: none;
   cursor: pointer;
   margin-top: -12px;
 }
