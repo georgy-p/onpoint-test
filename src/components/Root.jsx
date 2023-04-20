@@ -9,7 +9,7 @@ import { useRef } from 'react';
 import ThemeContext from './ThemeContext';
 
 const Root = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   const slides = [
     <MainSlide key='main' />,
@@ -24,6 +24,7 @@ const Root = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleClick = () => {
+    toggleTheme();
     setCurrentSlide(
       <MainSlide key='main' setNext={() => setCurrentSlide(slides[1])} />
     );
