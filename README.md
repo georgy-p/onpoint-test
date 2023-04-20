@@ -1,3 +1,5 @@
+Try it <a href="https://georgy-p.github.io/onpoint-test/">here</a>
+
 # Onpoint test task: Web slide-app for iPad
 
 This a test task for the frontend position in the Onpoint company. Web-app for iPad screen (1024 x 768) with sliders pages. To open next page you need to swipe screen left/right. Try it in the Chrome browser with developer tools. Builded on the plain React and CSS without any libraries. Formatted with Pretier and esLint.
