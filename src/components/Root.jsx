@@ -24,7 +24,8 @@ const Root = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleClick = () => {
-    toggleTheme();
+    toggleTheme('');
+    setSlideIndex(0);
     setCurrentSlide(
       <MainSlide key='main' setNext={() => setCurrentSlide(slides[1])} />
     );
@@ -46,7 +47,6 @@ const Root = () => {
       const diff = touchEndX.current - touchStartX.current;
 
       if (diff > 50) {
-        console.log('Свайп влево!');
         const nextIndex = slideIndex - 1;
         if (nextIndex < 0) {
           return;
@@ -54,17 +54,13 @@ const Root = () => {
           setSlideIndex(nextIndex);
           setCurrentSlide(slides[nextIndex]);
         }
-        // Добавьте здесь ваш код для обработки свайпа вправо
       } else if (diff < -50) {
-        console.log('Свайп вправо!');
         const nextIndex = slideIndex + 1;
         if (nextIndex === slides.length) {
           return;
         } else {
-          console.log(nextIndex);
           setSlideIndex(nextIndex);
           setCurrentSlide(slides[nextIndex]);
-          console.log(slides[slideIndex]);
         }
       }
     }

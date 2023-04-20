@@ -13,12 +13,12 @@ const ProductSlide = () => {
 
   const handleClick = () => {
     setClicked(true);
-    toggleTheme();
+    toggleTheme('dark');
   };
 
   const modalClick = () => {
     setClicked(false);
-    toggleTheme();
+    toggleTheme('');
   };
 
   const innerContent = (

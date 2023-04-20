@@ -4,8 +4,8 @@ import ThemeContext from './ThemeContext';
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('');
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === '' ? 'dark' : ''));
+  const toggleTheme = (status) => {
+    setTheme(status);
   };
 
   return (
