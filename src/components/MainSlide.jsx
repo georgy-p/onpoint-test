@@ -1,8 +1,6 @@
 import nextbtn from '../images/buttons/nextbtn.png';
 
-const Main = ({ setNext }) => {
-  const handleClick = () => setNext(true);
-
+const Main = ({ goToTextSlide }) => {
   return (
     <div className='main-container'>
       <div className='main-greeting'>
@@ -16,7 +14,7 @@ const Main = ({ setNext }) => {
         <div className='main-inner'>
           <p className='main-text-normal size-80'>ЗАДАНИЕ</p>
           <div className='main-btn'>
-            <button className='btn' onClick={handleClick}>
+            <button className='btn' onClick={goToTextSlide}>
               <img className='btn-logo' src={nextbtn} />
               <p className='btn-text'>Что дальше?</p>
             </button>
