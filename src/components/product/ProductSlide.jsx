@@ -1,24 +1,20 @@
-import { useContext, useState } from 'react';
-import bottle from '../images/product_page/bottle.png';
-import plate from '../images/product_page/plate.png';
-import notebook from '../images/product_page/notebook.png';
-import plus from '../images/product_page/plus.png';
+import { useState } from 'react';
+import bottle from '../../images/product_page/bottle.png';
+import plate from '../../images/product_page/plate.png';
+import notebook from '../../images/product_page/notebook.png';
+import plus from '../../images/product_page/plus.png';
+import Overlay from './Overlay';
 import Advantages from './Advantages';
-import ThemeContext from './ThemeContext';
 
 const ProductSlide = () => {
-  const { toggleTheme } = useContext(ThemeContext);
-
   const [isClicked, setClicked] = useState(false);
 
   const handleClick = () => {
     setClicked(true);
-    toggleTheme('dark');
   };
 
   const modalClick = () => {
     setClicked(false);
-    toggleTheme('');
   };
 
   const innerContent = (
@@ -69,10 +65,11 @@ const ProductSlide = () => {
   );
 
   return (
-    <>
+    <div className='product'>
       <img className='product-bottle' src={bottle} alt='bottle' />
       <div className='product-main-container'>{currentComponent}</div>
-    </>
+      <Overlay isClicked={isClicked}></Overlay>
+    </div>
   );
 };
 
