@@ -1,7 +1,7 @@
-import prev from '../images/product_page/prev.png';
-import next from '../images/product_page/next.png';
-import close from '../images/product_page/close.svg';
-import advantagesList from '../texts/advantagesList';
+import prev from '../../images/product_page/prev.png';
+import next from '../../images/product_page/next.png';
+import close from '../../images/product_page/close.svg';
+import advantagesList from '../../texts/advantagesList';
 import { useState } from 'react';
 
 const Advantages = ({ modalClick }) => {
