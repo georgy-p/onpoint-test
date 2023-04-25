@@ -1,12 +1,7 @@
-import Root from './components/Root';
-import ThemeProvider from './components/ThemeProvider';
+import Slider from './components/Slider';
 
 const App = () => {
-  return (
-    <ThemeProvider>
-      <Root />
-    </ThemeProvider>
-  );
+  return <Slider />;
 };
 
 export default App;
