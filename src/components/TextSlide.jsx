@@ -1,3 +1,6 @@
+import sperm from '../images/text_page/pinkSperm.png';
+import fadeSperm from '../images/text_page/spermFade.png';
+
 const TextSlide = () => {
   return (
     <div className='text-slide-container'>
@@ -39,6 +42,33 @@ const TextSlide = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className='sperm-group'>
+        <img
+          src={sperm}
+          alt='sperm'
+          className='sperm-animate-1 back-animate text-sperm1'
+        />
+        <img
+          src={fadeSperm}
+          alt='fadeSperm'
+          className='sperm-animate-1 back-animate text-sperm2'
+        />
+        <img
+          src={fadeSperm}
+          alt='fadeSperm'
+          className='sperm-animate-2 back-animate text-sperm3'
+        />
+        <img
+          src={fadeSperm}
+          alt='fadeSperm'
+          className='sperm-animate-3 back-animate text-sperm4'
+        />
+        <img
+          src={fadeSperm}
+          alt='fadeSperm'
+          className='sperm-animate-3 back-animate text-sperm5'
+        />
       </div>
     </div>
   );
