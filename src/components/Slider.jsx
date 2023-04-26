@@ -7,16 +7,16 @@ import Slide from './Slide';
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
+  const [isClickedModal, setClickedModal] = useState(false);
 
   const goToTextSlide = () => setSlideIndex(1);
-
   const goToHomePage = () => {
     setSlideIndex(0);
+    setClickedModal(false);
   };
 
   const changeSlide = (direction = 1) => {
     let slideNumber = 0;
-
     if (slideIndex + direction > 2) {
       return;
     }
@@ -40,15 +40,11 @@ const Slider = () => {
     const direction = touchPosition - currentPosition;
 
     if (direction > 10) {
-      console.log('right');
       changeSlide(1);
     }
-
     if (direction < -10) {
-      console.log('left');
       changeSlide(-1);
     }
-
     setTouchPosition(null);
   };
 
@@ -69,7 +65,11 @@ const Slider = () => {
           <TextSlide key='text' />
         </Slide>
         <Slide className={'slide'} goToHomePage={goToHomePage}>
-          <ProductSlide key='product' />
+          <ProductSlide
+            isClickedModal={isClickedModal}
+            setClickedModal={setClickedModal}
+            key='product'
+          />
         </Slide>
       </div>
     </div>
