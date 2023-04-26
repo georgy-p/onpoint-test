@@ -70,7 +70,7 @@ p {
 .slider {
   height: 768px;
   width: 1024px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 
@@ -152,14 +152,13 @@ p {
 }
 
 .main-container {
+  margin-top: 40px;
   width: 922px;
-  height: 400px;
 }
 
 .main-greeting {
   width: 125px;
   height: 30px;
-  margin-bottom: 30px;
 }
 
 .corner-text {
@@ -180,13 +179,11 @@ p {
   font-family: 'Gilroy';
   font-weight: normal;
   letter-spacing: 2px;
-  margin: 15px 0px;
 }
 
 .main-text-bold {
   font-family: 'Gilroy';
   font-weight: bold;
-  margin-left: 30px;
 }
 
 .main-inner {
@@ -219,6 +216,117 @@ p {
 .btn-logo {
   width: 58px;
   margin: 0px 15px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.animate {
+  position: absolute;
+  transition: all 2s ease-in-out;
+}
+
+.pinkSperm1 {
+  width: 550px;
+  left: 430px;
+  top: 150px;
+}
+
+.bakti2 {
+  width: 200px;
+  bottom: -90px;
+  left: 500px;
+  animation: moveAndScaleB2 10s linear infinite;
+}
+
+@keyframes moveAndScaleB2 {
+  25% {
+    transform: translate(0, 0) scale(1.2);
+  }
+  50% {
+    transform: translate(-10px, -10px) scale(1);
+  }
+}
+
+.bakti3 {
+  width: 100px;
+  left: 850px;
+  top: 200px;
+  animation: moveAndRotateB3 20s linear infinite;
+}
+
+@keyframes moveAndRotateB3 {
+  0% {
+    transform: rotate(0deg) translate(-50px, -50px);
+  }
+  50% {
+    transform: rotate(30deg) translate(-130px, -100px);
+  }
+}
+
+.bakti1 {
+  width: 70px;
+  z-index: -1;
+  left: 25px;
+  bottom: 195px;
+  animation: moveB1 20s linear infinite;
+}
+
+@keyframes moveB1 {
+  25% {
+    transform: translate(-5px, -5px);
+  }
+  75% {
+    transform: translate(70px, 70px);
+  }
+}
+
+.bakti4 {
+  width: 55px;
+  height: 50px;
+  left: 740px;
+  top: 50px;
+  z-index: -1;
+  animation: moveAndScaleB4 20s ease-in-out infinite;
+}
+
+@keyframes moveAndScaleB4 {
+  0% {
+    transform: translateX(0) scale(0.9);
+  }
+  50% {
+    transform: translateX(10px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(0.9);
+  }
+}
+
+.stick {
+  width: 130px;
+  height: 110px;
+  left: 0px;
+  top: 80px;
+  z-index: -1;
+}
+
+.unfocusSperm {
+  width: 260px;
+  bottom: 50px;
+  left: 0px;
+}
+
+.unfocusBakti {
+  width: 70px;
+  bottom: 50px;
+  left: 320px;
+}
+
+.unfocusBakti1 {
+  width: 60px;
+  top: 20px;
+  left: 930px;
 }
 
 .text-slide-container {
@@ -286,6 +394,65 @@ p {
   font-weight: bold;
 }
 
+.back-animate {
+  position: absolute;
+  z-index: -1;
+}
+
+.sperm-animate-1 {
+  animation: 5s show-1 ease-in-out infinite;
+}
+
+@keyframes show-1 {
+  from {
+    transform: translate(40px, 10px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.sperm-animate-2 {
+  animation: 3s show-1 ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.sperm-animate-3 {
+  animation: 3s show-1 ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.text-sperm1 {
+  width: 600px;
+  top: 100px;
+  left: calc(989px + 500px);
+}
+
+.text-sperm2 {
+  width: 400px;
+  top: 100px;
+  left: calc(989px + 700px);
+}
+
+.text-sperm3 {
+  width: 200px;
+  top: 70px;
+  left: calc(989px + 800px);
+}
+
+.text-sperm4 {
+  width: 400px;
+  bottom: 200px;
+  left: calc(989px + 900px);
+}
+
+.text-sperm5 {
+  width: 200px;
+  bottom: 200px;
+  left: calc(989px + 900px);
+}
+
 .product {
   position: relative;
   display: flex;
@@ -293,7 +460,7 @@ p {
 
 .product-bottle {
   width: 218px;
-  z-index: 1;
+  z-index: 5;
   left: -20px;
   position: relative;
   filter: brightness(100%);
@@ -526,4 +693,148 @@ p {
   background: none;
   cursor: pointer;
   margin-top: -12px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bubble1 {
+  width: 40px;
+  height: 40px;
+  left: 120px;
+  top: -20px;
+  z-index: 4;
+  animation: moveB1 10s linear infinite;
+}
+
+@keyframes moveB1 {
+  25% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(10px, 0);
+  }
+}
+
+.bubble2 {
+  width: 60px;
+  height: 60px;
+  left: 110px;
+  top: 70px;
+  z-index: 6;
+  animation: moveB2 10s linear infinite;
+}
+
+@keyframes moveB2 {
+  50% {
+    transform: translate(20px, 20px);
+  }
+}
+
+.bubble3 {
+  width: 40px;
+  height: 40px;
+  top: 120px;
+  z-index: 4;
+  animation: moveB3 10s linear infinite;
+}
+
+@keyframes moveB3 {
+  50% {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.bubble4 {
+  width: 100px;
+  height: 100px;
+  left: 120px;
+  top: 220px;
+  z-index: 4;
+  animation: moveB4 10s linear infinite;
+}
+
+@keyframes moveB4 {
+  25% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(20px, 20px) scale(1.2);
+  }
+  75% {
+    transform: translate(20px, 0) scale(1);
+  }
+}
+
+.bubble5 {
+  width: 30px;
+  height: 30px;
+  left: -60px;
+  bottom: 250px;
+  z-index: 4;
+  animation: moveB5 10s linear infinite;
+}
+
+@keyframes moveB5 {
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+}
+
+.bubble6 {
+  width: 80px;
+  height: 80px;
+  left: -50px;
+  bottom: 120px;
+  z-index: 6;
+  animation: moveB6 10s linear infinite;
+}
+
+@keyframes moveB6 {
+  30% {
+    transform: translate(0, 0) scale(1);
+  }
+  60% {
+    transform: translate(20px, 20px) scale(0.9);
+  }
+}
+
+.bubble7 {
+  width: 60px;
+  height: 60px;
+  left: 160px;
+  bottom: 100px;
+  z-index: 4;
+  animation: moveB7 10s linear infinite;
+}
+
+@keyframes moveB7 {
+  50% {
+    transform: translate(30px, 0);
+  }
+}
+
+.bubble8 {
+  width: 150px;
+  height: 150px;
+  left: 100px;
+  bottom: -80px;
+  z-index: 6;
+  animation: moveB8 10s linear infinite;
+}
+
+@keyframes moveB8 {
+  50% {
+    transform: translate(10px, 10px) scale(0.9);
+  }
 }
